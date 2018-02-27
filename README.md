@@ -4,6 +4,8 @@
 
 This script allows python users to utilize Clayton Thyne's Stata file for creating ccodes in country-level datasets. Allows for easy merging. Uses a modified text file of original stata code to scrape ccode numbers and country name strings. 
 
+*UPDATE 2/27/2018: Added 13 additional nonunfiorm country strings based on NAP dataset.* 
+
 
 # Credit for ccode/country information goes to Dr. Clayton Thyne at Kentucky. Process based on original .do file made by Thyne. See http://www.uky.edu/~clthyn2/research.htm for more information.
 
