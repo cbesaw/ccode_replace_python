@@ -50,7 +50,22 @@ def ccode_make(df, file_name, c_var):
           i, df['ccode'])
         
     return df
-        
+
+
+#make country names from ccode
+#made some changes to correct loop logic and 
+#made argument terms more unique
+def name_make(df, file_name, c_code):
+    
+    ccodes, country_names = clthyn_scrape(file_name)
+    
+    df['country_names'] = np.nan
+    
+    for i, n in zip(ccodes, country_names):
+        df['country_names'] = np.where(df[c_code]==i, 
+          n, df['country_names'])
+    
+    return df
     
 ##################################################################################
 #use clthyn.txt file for strings of stata code
